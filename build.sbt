@@ -18,14 +18,14 @@ lazy val svg2laminar = Root(
   orgPackage = "com.ossuminc.svg2laminar",
   orgName = "Ossum Inc.",
   orgPage = url("https://www.ossuminc.com/"),
-  startYr = 2024,
+  startYr = 2025,
   devs = developers,
   spdx = "Apache-2.0"
 ).configure(With.GithubPublishing)
   .configure(With.typical, With.header)
   .configure(With.noMiMa)
   .configure(
-    With.packagingUniversal(
+    With.Packaging.universal(
       maintainerEmail = "reid@ossuminc.com",
       pkgName = "riddlc",
       pkgSummary = "Compiler for RIDDL language, Universal packaging",
