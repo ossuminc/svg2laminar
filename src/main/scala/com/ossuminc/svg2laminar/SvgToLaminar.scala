@@ -145,6 +145,10 @@ object SvgToLaminar:
           s"""svg.viewBox := "$value""""
         case "preserveAspectRatio" =>
           s"""svg.preserveAspectRatio := "$value""""
+        case "id" =>
+          s"""svg.idAtter := "$value"""
+        case "stop-color" =>
+          s"""svg.stopColor := "$value"""
         case attr =>
           s"""svg.$attr := "$value""""
     }
